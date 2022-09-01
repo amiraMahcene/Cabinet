@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" name="viewport" content="width="device-width , height-scale=1.0"/>
+        <title>Sing In</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css">
+        <link href="../css/Sing in.css " rel="stylesheet"/>
+        <script src="https://kit.fontawesome.com/0c53053c39.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+      
+        <div class="continer">
+            <div class="left-side">
+                <div class="logo">
+                    <img src="../Images/icons8-medical-doctor-100 (1).png" alt="logo"/>
+                    <h1>WCare</h1>
+                </div>
+                <div class="image">
+                    <img src="../Images/Groupe 51.png" alt="doctor"/>
+                </div>
+                <div class="logout">
+                    <a href=""><img src="../Images/back2.png" alt="back to the main page"></a>
+                </div>
+                
+            </div>
+            <div class="right-side">
+               <div class="menu">
+                <button><a href="../html/Sing up.html ">Sign Up</a></button>
+               </div>
+               <div class="main-content">
+             
+                   <h1>Hey! <br> Welcome back </h1>
+                   <form>
+                       <input type="text" placeholder="User Name"/>
+                       <input type="password" placeholder="Password"/>
+                       <button><a href="">Sign In</a></button>
+                        <a href="" id="psf">Forget my password? </a>
+                   </form>
+                   <div class="social-media">
+                       <a href=""><i class="fab fa-facebook"></i></a>
+                       <a href=""><i class="fab fa-twitter"></i></a>
+                       <a href=""><i class="fab fa-google"></i></a>
+                   </div>
+               </div>
+            </div>
+            
+        </div>
+
+
+        <script>
+            var menuBtn = document.getElementById('menuBtn');
+            var sidNavBar = document.getElementById('sidNavBar');
+            sidNavBar.style.right = '-250px';
+            menuBtn.onclick = function(){
+                if(sidNavBar.style.right == '-250px')
+                {
+                    sidNavBar.style.right = '0';
+                }
+                else
+                {
+                    sidNavBar.style.right = '-250px';
+                }
+            }
+        </script>
+    </body>
+</html>
