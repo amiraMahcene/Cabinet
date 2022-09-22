@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Appointments</title>
+    <link href="../css/Appointment.css" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/0c53053c39.js" crossorigin="anonymous"></script>
+    <style>
+        #History th{
+    background-color: #707070;
+    color:#fff;
+
+
+        }
+        #update th{
+    background-color: #484749;
+    color:#fff;}
+    #update  .point{
+    color:#484749;
+}
+#request th{
+    background-color: #202020;
+    color:#fff;
+}
+    </style>
+</head>
+
+<body>
+    
+    <div class="continer">
+        <div class="sidbar">
+            <div class="logo">
+                <img src="../Images/icons8-medical-doctor-100 (1).png" alt="logo"/>
+                <h1>WCare</h1>
+            </div>
+            <div class="liste-menu">
+                <ul>
+                    <li>
+                        <a href="../html/Dashboard.html" >
+                            <i class="fa fa-home"></i>
+                            <span> Home</span>
+                        </a>
+                    </li>
+                 
+                    <li>
+                        <a href="../html/consulation.html">
+                            <i class="fas fa-user-md"></i>
+                            <span> Consultations</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../html/Appointment.html" class="active">
+                            <i class="fa fa-credit-card"></i>
+                            <span> Appointments</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../html/UserProile.html">
+                            <i class="far fa-envelope-open"></i>
+                            <span> Contacts</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../html/Setting.html">
+                            <i class="fa fa-cog"></i>
+                            <span> Preferences</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../html/calendar.html">
+                            <i class="far fa-calendar-check"></i>
+                            <span> scheduling appointments</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span> Log out</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="header">
+                <div class="search-bar">
+                    
+                        <img src="../Images/icons8-search-30 (1).png" alt="search icon">
+                        <input type="search" placeholder="Search">
+                   
+                </div>
+                <div class="user-info">
+                    <i class="far fa-bell" style="width: 20px; margin-top: 12px; margin-right: 10px;"></i>
+                         <h1>First Name Last Name</h1>
+                        <img src="../Images/undraw_male_avatar_323b.svg" alt="User Profile">
+                        
+                </div>
+            </div>
+            <div class="main" >
+                <div class="app">
+                <h2>Appointments Liste</h2>
+                 <div class="icons">
+                     <ul>
+                         <li>
+                             <a href="#request">
+                                <i class="fas fa-plus"></i>
+                                 <sapn>Request</sapn>
+                             </a>
+                         </li>
+                         <li>
+                            <a href="#update" onclick="up">
+                                <i class="fas fa-edit"></i>
+                                <sapn>Update</sapn>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#History">
+                                <i class="fas fa-history"></i>
+                                <sapn>History</sapn>
+                            </a>
+                        </li>
+                     </ul>
+                 </div>
+                </div>
+                <table  class="Table">
+                    <thead>
+                     <th>Cabinet</th>
+                      <th>Hour</th>
+                      <th>Minuts</th>
+                      <th>day</th>
+                      <th>Month</th>
+                      <th>Year</th>
+                      <th>Delete</th>
+                      <th>Update</th>
+                   </thead>
+                   <tbody>
+                    <tr>
+                
+                          <td data-label="Cabinet">Alger</td>
+                          <td data-label="Hour">10</td>
+                          <td data-label="Minuts">00</td>
+                          <td data-label="day">20</td>
+                          <td data-label="Month">06</td>
+                          <td data-label="Year">2021</td>
+                          <td data-label="Delete"><a href="">Delete</a></td>
+                          <td data-label="Update"><a href="">Update</a></td>
+
+                    </tr>
+                    <tr>
+                
+                        <td data-label="Cabinet">0</td>
+                        <td data-label="Hour">0</td>
+                        <td data-label="Minuts">0</td>
+                        <td data-label="day">0</td>
+                        <td data-label="Month">0</td>
+                        <td data-label="Year">0</td>
+                        <td data-label="Delete"><a href="">Delete</a></td>
+                        <td data-label="Update"><a href="">Update</a></td>
+                   
+
+                  </tr>
+        
+                  </tbody>
+                  
+                  </table>
+                  <h2  style="color:#202020; margin-left:20px; margin-top:20px">Request  Liste</h2>
+                  <table  class="Table" id="request">
+                    <thead>
+                     <th>Cabinet</th>
+                      <th>Hour</th>
+                      <th>Minuts</th>
+                      <th>day</th>
+                      <th>Month</th>
+                      <th>Year</th>
+                      <th>Delete</th>
+                      
+                   </thead>
+                   <tbody>
+                    <tr>
+                
+                          <td data-label="Cabinet">....</td>
+                          <td data-label="Hour">00</td>
+                          <td data-label="Minuts">00</td>
+                          <td data-label="day">00</td>
+                          <td data-label="Month">00</td>
+                          <td data-label="Year">0000</td>
+                          <td data-label="Delete"><a href="">Delete</a></td>
+                          
+
+                    </tr>
+                  </tbody>
+                  </table>
+                  <h2 style="color:#484749; margin-left:20px; margin-top:20px">Update Liste</h2>
+                  <table  class="Table"id="update">
+                    <thead>
+                     <th>Cabinet</th>
+                      <th>Hour</th>
+                      <th>Minuts</th>
+                      <th>day</th>
+                      <th>Month</th>
+                      <th>Year</th>
+                     
+                      
+                   </thead>
+                   <tbody>
+                    <tr>
+                
+                          <td data-label="Cabinet">....</td>
+                          <td data-label="Hour">00</td>
+                          <td data-label="Minuts">00</td>
+                          <td data-label="day">00</td>
+                          <td data-label="Month">00</td>
+                          <td data-label="Year">0000</td>
+                        
+                          
+
+                    </tr>
+               
+              
+                  </tbody>
+                  
+                  </table>
+                  <h2 style="color:#707070; margin-left:20px; margin-top:30px">History Liste</h2>
+                  <table  class="Table" id="History">
+                    <thead>
+                     <th>Cabinet</th>
+                      <th>Hour</th>
+                      <th>Minuts</th>
+                      <th>day</th>
+                      <th>Month</th>
+                      <th>Year</th>
+                     
+                      
+                   </thead>
+                   <tbody>
+                    <tr>
+                
+                          <td data-label="Cabinet">....</td>
+                          <td data-label="Hour">00</td>
+                          <td data-label="Minuts">00</td>
+                          <td data-label="day">00</td>
+                          <td data-label="Month">00</td>
+                          <td data-label="Year">0000</td>
+                         
+                          
+
+                    </tr>
+                    <tr>
+                
+                        <td data-label="Cabinet">....</td>
+                        <td data-label="Hour">0</td>
+                        <td data-label="Minuts">0</td>
+                        <td data-label="day">0</td>
+                        <td data-label="Month">0</td>
+                        <td data-label="Year">0</td>
+                        
+                       
+
+                  </tr>
+              
+                  </tbody>
+                  
+                  </table>
+                
+            </div>
+            </div>
+            </div>
+            
+
+
+
+
+
+
+
+       
+</body>
+</html>
